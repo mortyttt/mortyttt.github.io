@@ -62,7 +62,7 @@ function regex_convertor(string, add, worker) {
     const type = string.match(/type=(.*?)[&#]/);
     const name = string.match(/#(.*?)$/);
     // const sni = string.match(/sni=(.*?)[&#]/);
-    return `${protocol[1]}://${uuid[1]}@${add}:${port[1]}?sni=${worker}&security=${security[1]}&type=${type[1]}&path=/${host[1]}${path[1]}&host=${worker}#${name[1]}`
+    return `${protocol[1]}://${uuid[1]}@${add}:${port[1]}?sni=${worker}&allowInsecure=1&security=${security[1]}&type=${type[1]}&path=/${host[1]}${path[1]}&host=${worker}#${name[1]}`
 
 
 
